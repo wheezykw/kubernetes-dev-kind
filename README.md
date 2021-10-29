@@ -25,7 +25,7 @@
           1. `kubectl get nodes` You may need to wait a few seconds to let the nodes start up. They will say Ready under STATUS when they are ready to go.
           2. `docker ps` will show you the `kind-control-plane` and `kind-worker` nodes running showing that kind is running in Docker instead of a VM.
 
-## Working with Control Plane Container
+## Working with Control Plane Container or Worker Container
   1. `docker ps` will show you the Docker containers and their details
   2. `docker exec -it <container-id> sh` You will need to copy the container id from the control plane that is the output of the previous command. This will give you a shell within the control plane.
   3. `ls /etc/kubernetes` This will show the Kubernetes configuration files in the control plane.
